@@ -1,0 +1,32 @@
+val fullTweetSchema = StructType(List(
+  StructField("id", LongType, true),
+  StructField("user", StructType(List(
+    StructField("id", LongType, true),
+    StructField("screen_name", StringType, true),
+    StructField("location", StringType, true),
+    StructField("friends_count", IntegerType, true),
+    StructField("followers_count", IntegerType, true),
+    StructField("description", StringType, true)
+  )), true),
+  StructField("entities", StructType(List(
+    StructField("hashtags", ArrayType(
+      StructType(List(
+        StructField("text", StringType, true)
+      ))
+    ), true),
+    StructField("urls", ArrayType(
+      StructType(List(
+        StructField("url", StringType, true),
+        StructField("expanded_url", StringType, true),
+        StructField("display_url", StringType, true)
+      ))
+    ), true) 
+  )), true),
+  StructField("lang", StringType, true),
+  StructField("text", StringType, true),
+  StructField("created_at", StringType, true)
+))
+
+val fullTweetDF = spark.read.schema(fullTweetSchema).json(path)
+fullTweetDF.printSchema()
+display(fullTweetDF)
