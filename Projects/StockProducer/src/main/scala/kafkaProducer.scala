@@ -5,12 +5,13 @@ import twitter4j._
 import twitter4j.conf.ConfigurationBuilder
 
 object kafkaProducer {
+
   def main(args: Array[String]): Unit = {
     val queue = new LinkedBlockingDeque[Status](1000)
-    val consumerKey = "vFm6mG0ClDDgpSr6biU5azdiH"
-    val consumerSecret = "PaaZQp3PDooa5vDZfaUBsXDuLwyhKTMYs1d90IzQFX09EbdoX5"
-    val accessToken = "196342002-lFx9WDj05B4mSNrDOdO5iL2Zpru1FBPWg3Tn6Y0P"
-    val accessTokenSecret = "XW3mKFKnyBTpiOTRXfVEFSnsGHq8MOxsrp92oBTBmlXzL"
+    val consumerKey = "vRODXfC4vv3j75KFlPXPDeCh1"
+    val consumerSecret = "hG5pLRm79HYb0x1s6U8dgrZtFlifMyfk3iqQJOKx1kMYoGfBL4"
+    val accessToken = "33548073-cKhmwn2iH0Z6RPOP8AZ1Vrc6z379nqbNcYaa4T31P"
+    val accessTokenSecret = "iwAHC8VZbqQSwAQ492Vks4dKYoNUX0Et1W3FHba2uFzaC"
 
     val topicName = "Israel"
     val keywords = "Trump"
@@ -114,11 +115,12 @@ object kafkaProducer {
           producer.send(new ProducerRecord[String,String](
             topicName,
             (count+=1).toString,
-            status.getText))
+            status.getText))// Get the lines, split them into words, count the words and print
+
+
         }
       }
     }
   }
 
 }
-

@@ -14,7 +14,7 @@ object TwitterProducer {
     val accessTokenSecret = "XW3mKFKnyBTpiOTRXfVEFSnsGHq8MOxsrp92oBTBmlXzL"
 
     val topicName = "Israel"
-    val keywords = "Trump"
+    val keywords = "Kate Upton"
 
     val confBuild = new ConfigurationBuilder()
 
