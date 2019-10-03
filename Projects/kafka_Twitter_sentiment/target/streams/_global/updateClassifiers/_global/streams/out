@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/kafka_Twitter_sentiment/"), "kafka_twitter_sentiment")...
+[debug] Done updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/kafka_Twitter_sentiment/"), "kafka_twitter_sentiment")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

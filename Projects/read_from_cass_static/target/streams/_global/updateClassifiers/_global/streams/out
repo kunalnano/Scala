@@ -1,0 +1,4 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/read_from_cass_static/"), "read_from_cass_static")...
+[debug] Done updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/read_from_cass_static/"), "read_from_cass_static")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.

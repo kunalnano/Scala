@@ -1,0 +1,5 @@
+[warn] insecure HTTP request is deprecated 'http://repo.typesafe.com/typesafe/releases/'; switch to HTTPS or opt-in as ("Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/").withAllowInsecureProtocol(true)
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/Kafka_2_Cass/"), "kafka_2_cass")...
+[debug] Done updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/Kafka_2_Cass/"), "kafka_2_cass")
+[warn] There may be incompatibilities among your library dependencies; run 'evicted' to see detailed eviction warnings.
