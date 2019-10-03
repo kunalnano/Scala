@@ -1,0 +1,3 @@
+[debug] "not up to date. inChanged = true, force = false
+[debug] Updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/tweet_sink_hdfs/project/"), "tweet_sink_hdfs-build")...
+[debug] Done updating ProjectRef(uri("file:/Users/kunalsharma/TechField/Scala/Projects/tweet_sink_hdfs/project/"), "tweet_sink_hdfs-build")

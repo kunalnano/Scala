@@ -10,7 +10,7 @@ object TwitterStreamAnalyzer_Bill {
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("Bill").setMaster("local[*]")
     val ssc = new StreamingContext(conf, Seconds(5))
-    val topics = List("Bill").toSet // You have two topics; "israel" and "manny"
+    val topics = List("Israel").toSet // You have two topics; "israel" and "manny"
 
     val kafkaParams = Map( //Parameters to connect to Kafka
       "bootstrap.servers" -> "localhost:9092", //This's Al's IP. if you want local; "bootstrap.servers" -> "localhost:9092",
@@ -54,7 +54,6 @@ object TwitterStreamAnalyzer_Bill {
       //      println("(" + tweet.getText + " | " + sentiment.toString + " | " + tags)
       (tweet.getText, sentiment.toString, tags)
     }
-
 
     val sqlContex = spark.sqlContext
 
