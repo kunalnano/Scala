@@ -1,2 +1,4 @@
-[debug] downloaded https://repo1.maven.org/maven2/org/apace/spark/spark-streaming_2.11/2.4.1/spark-streaming_2.11-2.4.1.pom
-[debug] downloaded https://repo1.maven.org/maven2/org/apace/spark/spark-streaming_2.11/2.4.1/spark-streaming_2.11-2.4.1.pom.sha1
+[debug] downloaded https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0.pom
+[debug] downloaded https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0-sources.jar
+[debug] downloaded https://repo1.maven.org/maven2/com/datastax/spark/spark-cassandra-connector_2.11/2.3.0/spark-cassandra-connector_2.11-2.3.0-javadoc.jar
