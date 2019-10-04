@@ -28,7 +28,7 @@ object casskafka {
     val cluster = Cluster.builder().addContactPoint(cassandra_host).build()
     val session = cluster.connect()
     session.execute("CREATE KEYSPACE IF NOT EXISTS Tweet WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 1 };")
-    session.execute("CREATE TABLE IF NOT EXISTS Tweet.Twitter (word text, ts timestamp, count int, PRIMARY KEY(word, ts)) ")
+    session.execute("CREATE TABLE IF NOT EXISTS Tweet.Twitter (id int, name text, text text, word text, ts timestamp, count int, PRIMARY KEY(word, ts)) ")
     //session.execute("TRUNCATE Tweet")
 
     val kafkaParams = Map( //Parameters to connect to Kafka
@@ -53,7 +53,7 @@ object casskafka {
     val NFL = line.map(_.value) // split the message into lines
       .flatMap(_.split(" ")) //split into words
       .filter(w => w.length() > 0) // remove any empty words caused by double spaces
-      .map(w => (w, 1L)).reduceByKey(_ + _) // count by wordline.foreachRDD(rdd => {
+      .map(w => (w, 1L)).reduceByKey(_ + _) // count by word for each line.foreachRDD(rdd => {
       .map({case (w,c) => (w,new Date().getTime,c)}) // add the current timestamp saveToCassandra("Tweet,count")})
     NFL.print()
 
